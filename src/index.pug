@@ -5,6 +5,11 @@ head
 	meta(name="viewport" content="width=device-width, initial-scale=1")
 	title Document
 body
-	include ./components/header/header
-	include ./components/auth/auth
-	include ./components/footer/footer
+	
+	.limit
+		include ./components/header/header
+		.content
+			.part
+				include ./components/auth/auth
+		include ./components/footer/footer
+		
