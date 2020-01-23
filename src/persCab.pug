@@ -4,15 +4,16 @@ head
 	meta(charset="UTF-8")
 	title Document
 body
-	.limit
-		include ./components/perscab/header/header
-		.content
-			a(href="index.html").button назад
-			.part.d-g.gg-2
-				h2.tac ваши проекты
-				.project_list.d-g.gg-1
-					a(href="project.html").button.project_link project
-					a(href="#").button.project_link project 2 
-					a(href="#").button.project_link project 3
-		include ./components/perscab/footer/footer
+	include ./components/perscab/header/header
+	section
+		.limit
+			.content
+				a.part(href="index.html").part.button назад
+				.part.d-g.gg-2
+					h2.tac.part ваши проекты
+					.project_list.d-g.gg-1
+						a(href="project.html").button.project_link project
+						a(href="#").button.project_link project 2 
+						a(href="#").button.project_link project 3
+	include ./components/perscab/footer/footer
 	

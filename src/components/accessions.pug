@@ -4,17 +4,19 @@ head
 	meta(charset="UTF-8")
 	title accession
 body
-	.limit
-		include ./header/header
-		.content
-			a(href="project.html").button назад
-			.part.d-g.gg-1
-				h2 доступы
-						.accesions
-							.ftp
-								h3 ftp
-								.row 
-									.col.host хост					
-									.col.name имя
-									.col.pass пароль
-		include ./footer/footer
+	include ./header/header
+	section
+		.limit
+			.content
+				a.part(href="project.html").button назад
+				.d-g.gg-1
+					h3 доступы
+					.accesions
+						.ftp.marg-b-2
+							h4 ftp
+							.row
+								.col.host хост					
+								.col.name имя
+								.col.pass пароль
+	include ./footer/footer
+	

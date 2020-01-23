@@ -4,49 +4,52 @@ head
 	meta(charset="UTF-8")
 	title project
 body
-	.limit
-		include ./header/header
-		.content
-			a(href="persCab.html").button назад
-			.part.d-g.gg-1
-				h3.tac project 1
-				.d-g.gaf-c.gg-1
-					a(href="create_task.html").button.create_task.block создать задачу
-					a(href="accessions.html").button.project_accession.block доступы
-				h3.tac последние задачи
-				.done.d-g.gg-1
-					h3 выполненные
-					a.button.block 
-						h4 task1
-						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
-					a.button.block 
-						h4 task2
-						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
-					a.button.block 
-						h4 task3
-						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
-				.in_process.d-g.gg-1
-					h3 в работе
-					a.button.block 
-						h4 task1
-						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
-					a.button.block 
-						h4 task2
-						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
-					a.button.block 
-						h4 task3
-						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
-				.done.d-g.gg-1
-					h3 завершенные
-					a.button.block 
-						h4 task1
-						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
-					a.button.block 
-						h4 task2
-						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
-					a.button.block 
-						h4 task3
-						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
-		include ./footer/footer
+	include ./header/header
+	section
+		.limit
+			.content
+				.part(href="persCab.html").button назад
+				.d-g.gg-1
+					.d-g.gg-1
+						h3.tac project 1
+						.d-g.gaf-c.gg-1
+							a(href="create_task.html").button.create_task.block создать задачу
+							a(href="accessions.html").button.project_accession.block доступы
+					.part.d-g.gg-1
+						h3.tac последние задачи
+						.done.d-g.gg-1.marg-v
+							h3 выполненные
+							a.button.block 
+								h4 task1
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
+							a.button.block 
+								h4 task2
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
+							a.button.block 
+								h4 task3
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
+						.in_process.d-g.gg-1.marg-v
+							h3 в работе
+							a.button.block 
+								h4 task1
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
+							a.button.block 
+								h4 task2
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
+							a.button.block 
+								h4 task3
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
+						.done.d-g.gg-1.marg-v
+							h3 завершенные
+							a.button.block 
+								h4 task1
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
+							a.button.block 
+								h4 task2
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
+							a.button.block 
+								h4 task3
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
+	include ./footer/footer
 
 

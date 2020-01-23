@@ -80,7 +80,8 @@ h3 {
   font-size: 30px;
   line-height: 37px;
   letter-spacing: 0.02em;
-  color: #000000; }
+  color: #000000;
+  margin: 0; }
 
 h4 {
   font-weight: bold !important;
@@ -95,8 +96,7 @@ body {
   font-family: Montserrat !important;
   font-size: 16px;
   line-height: 20px;
-  margin: 0;
-  height: 100vh; }
+  margin: 0; }
 
 footer, header {
   width: 100%;
@@ -112,19 +112,18 @@ nav {
   nav a {
     width: 100%; }
 
+section {
+  background: rgba(0, 0, 0, 0.1); }
+
 a.button.block {
   width: 100%;
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #212121; }
 
 .change {
   background: #FAF3E3; }
-
-.content {
-  background: rgba(0, 0, 0, 0.1);
-  padding: 100px;
-  height: 100%; }
 
 .wrapper {
   height: 100%; }
