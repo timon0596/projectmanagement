@@ -4,14 +4,17 @@ head
 	meta(charset="UTF-8")
 	title tasks
 body
-	include ./header/header
-	.wrapper
-		h3 новая задача
-		.task_creation_form
-			form
-				textarea(name="", cols="30", rows="10")
-				.buttons
-					.button.accept принять
-					.button.clear очистить
-	include ./footer/footer
+	.limit
+		include ./header/header
+		.content
+			a(href="project.html").button назад
+			.part.d-g.gg-1
+				h3 новая задача
+				.task_creation_form
+					form
+						textarea(name="", cols="30", rows="10")
+						.buttons
+							.button.accept принять
+							.button.clear очистить
+		include ./footer/footer
 	
