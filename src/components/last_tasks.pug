@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title last tasks
+body
+	include ./header/header
+	.wrapper
+		h2 последние задачи
+		.task_categories
+			.task_category.overlooked.done.block просмотренные
+			.task_category.to_view.done.block выполненные (просмотреть)
+			.task_category.in_process.block в процессе выполнения
+		.tasklist(data-done="overlooked")
+			#overlooked-task-1.task.block просмотрено
+				.taskname task 1
+				.task_description
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, saepe!
+				.task_info
+					.date 21.01.2020
+					.author иван иванов
+			#overlooked-task-2.task.block просмотрено
+				.taskname task 2
+				.task_description
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, saepe!
+				.task_info
+					.date 21.01.2020
+					.author иван иванов
+			#overlooked-task-3.task.block просмотрено
+				.taskname task 3
+				.task_description
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, saepe!
+				.task_info
+					.date 21.01.2020
+					.author иван иванов
+		.tasklist(data-done="to_view").hidden
+			#to_view-task-1.task.block 
+				.taskname task 1
+				.task_description
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, saepe!
+				.task_info
+					.date 21.01.2020
+					.author иван иванов
+			#to_view-task-2.task.block
+				.taskname task 1
+				.task_description
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, saepe!
+				.task_info
+					.date 21.01.2020
+					.author иван иванов
+			#to_view-task-3.task.block
+				.taskname task 1
+				.task_description
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, saepe!
+				.task_info
+					.date 21.01.2020
+					.author иван иванов
+		.tasklist(data-done="in_process").hidden
+			#in_process-task-1.task.block some task
+			#in_process-task-2.task.block some task
+			#in_process-task-3.task.block some task
+	include ./footer/footer
+	

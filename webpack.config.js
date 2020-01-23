@@ -81,6 +81,22 @@ module.exports={
 			template: './src/persCab.pug',
 			filename: 'persCab.html'
 		}),
+		new HWP({
+			template: './src/components/project.pug',
+			filename: 'project.html'
+		}),
+		new HWP({
+			template: './src/components/accessions.pug',
+			filename: 'accessions.html'
+		}),
+		new HWP({
+			template: './src/components/create_task.pug',
+			filename: 'create_task.html'
+		}),
+		new HWP({
+			template: './src/components/last_tasks.pug',
+			filename: 'last_tasks.html'
+		}),
 		new webpack.ProvidePlugin({
 			$: 'jquery',
 			jQuery: 'jquery',

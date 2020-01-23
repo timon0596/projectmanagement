@@ -3,9 +3,10 @@
 @import './footer/footer'
 @import './auth/auth'
 @import './perscab/control/control'
+@import './lasttasks'
 .button
 	padding: 5px 20px
-	background: #F6404F
+	background: $accent
 	cursor: pointer
 	text-decoration: none
 	color: $black
@@ -16,17 +17,17 @@
 	margin: 10px
 	box-shadow: 9px 9px 24px -3px rgba(0,0,0,0.95)
 	border: none !important
-	width: min-content
 	height: 100px
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
-	display: flex
+	display: -webkit-inline-flex
+	display: -moz-inline-flex
+	display: -ms-inline-flex
+	display: -o-inline-flex
+	display: inline-flex
 	justify-content: center
 	align-items: center
 	padding: 10px
 	border-radius: 5px
+	background: $accent
 form
 	display: -webkit-flex
 	display: -moz-flex
@@ -69,6 +70,8 @@ body
 	font-family: Montserrat !important
 	font-size: 16px
 	line-height: 20px
+	margin: 0
+	height: 100vh
 .df
 	display: -webkit-flex
 	display: -moz-flex
@@ -79,6 +82,9 @@ body
 .content
 	background: $accent
 	padding: 100px
+	height: 100%
+.wrapper
+	height: 100%
 footer
 	width: 100%
 header
