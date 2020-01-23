@@ -2,7 +2,22 @@
 @import './header/header'
 @import './footer/footer'
 @import './auth/auth'
-a.button
+@import './perscab/control/control'
+.button
+	padding: 5px 20px
+	background: #F6404F
+	cursor: pointer
+	text-decoration: none
+	color: $black
+	display: inline-block
+.change
+	background: $support
+.block
+	margin: 10px
+	box-shadow: 9px 9px 24px -3px rgba(0,0,0,0.95)
+	border: none !important
+	width: min-content
+	height: 100px
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
@@ -10,15 +25,16 @@ a.button
 	display: flex
 	justify-content: center
 	align-items: center
-	font-style: normal
-	font-weight: normal
-	font-size: 16px
-	line-height: 20px
-	letter-spacing: 0.03em
-	color: #FFFFFF
-	background: $beige
-	padding: 17px 30px
-	cursor: pointer
+	padding: 10px
+	border-radius: 5px
+form
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: flex-start
 h1
 	font-style: normal
 	font-weight: bold !important
@@ -33,6 +49,7 @@ h2
 	letter-spacing: 0.04em
 	text-transform: uppercase
 	color: #212121
+	margin: 0
 h3
 	font-style: normal
 	font-weight: normal
@@ -52,6 +69,29 @@ body
 	font-family: Montserrat !important
 	font-size: 16px
 	line-height: 20px
+.df
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+.content
+	background: $accent
+	padding: 100px
+footer
+	width: 100%
+header
+	width: 100%
+nav
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	width: 100%
+	a
+		width: 100%
 // @media screen and (min-width: 1680px)
 // 	body > *
 // 		padding: 0px 400px

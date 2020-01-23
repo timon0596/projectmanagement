@@ -77,6 +77,10 @@ module.exports={
 			template: './src/index.pug',
 			filename: 'index.html'
 		}),
+		new HWP({
+			template: './src/persCab.pug',
+			filename: 'persCab.html'
+		}),
 		new webpack.ProvidePlugin({
 			$: 'jquery',
 			jQuery: 'jquery',

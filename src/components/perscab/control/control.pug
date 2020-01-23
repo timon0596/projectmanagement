@@ -1,0 +1,47 @@
+section.controls.content
+	.control_panel
+		.control_panel__nav
+			.control_panel__tab.button.projects проекты
+		.project_tablist
+			#proj-1_link.button.tab_item.block project 1
+		#proj-1.proj_content
+			h3 project 1
+			.button.create_task создать задачу
+			.task_creation_form
+				form
+					textarea(name="", cols="30", rows="10")
+					.buttons
+						.button.accept принять
+						.button.clear очистить
+			.button.project_accession__button доступы к проекту
+			.project_accessions
+				.project_accessions__values
+					input(type="text", name="pass" value="some password")
+					.button.change(data-change="pass") изменить
+					input(type="text", name="login" value="some login")
+					.button.change(data-change="login") изменить
+					input(type="text", name="hosting_name" value="host_name.ru")
+					.button.change(data-change="hosting_name") изменить
+					input(type="email", name="mail" value="lorem@mail.ru")
+					.button.change(data-change="mail") изменить
+			.button.tasks задачи
+			.task_categories
+				.task_category.overlooked.done.block просмотренные
+				.tasklist(data-done="overlooked")
+					#overlooked-task-1.task some task
+					#overlooked-task-2.task some task
+					#overlooked-task-3.task some task
+				.task_category.to_view.done.block выполненные (просмотреть) 
+				.tasklist(data-done="to_view")
+					#to_view-task-1.task some task
+					#to_view-task-2.task some task
+					#to_view-task-3.task some task
+				.task_category.in_process.block в процессе выполнения
+				.tasklist(data-done="in_process")
+					#in_process-task-1.task some task
+					#in_process-task-2.task some task
+					#in_process-task-3.task some task
+
+
+
+
