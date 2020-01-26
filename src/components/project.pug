@@ -8,7 +8,7 @@ body
 	section
 		.limit
 			.content
-				.part(href="persCab.html").button назад
+				a.part(href="persCab.html").button назад
 				.d-g.gg-1
 					.d-g.gg-1
 						h3.tac project 1
@@ -19,7 +19,7 @@ body
 						h3.tac последние задачи
 						.done.d-g.gg-1.marg-v
 							h3 выполненные
-							a.button.block 
+							a.button.block#task1(data-modalType="simpleModal")
 								h4 task1
 								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, molestiae.
 							a.button.block 
